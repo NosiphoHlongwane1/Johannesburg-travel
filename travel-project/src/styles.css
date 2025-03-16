@@ -1,0 +1,259 @@
+:root{
+    --main-color:#288550;
+    --primary-color: #5cbe85;
+    --secondary-color: #e2eee4;
+    --border-color: #276144;
+}
+
+body{
+    background: var(--main-color);
+    font-family: "Poppins", sans-serif;
+}
+
+header h1{
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+header h2{
+    font-weight: 300;
+    line-height: 1;
+    font-weight: 400;
+    color: white;
+    opacity: 0.9;   
+}
+
+header h3{
+    line-height: 1.5;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+header a{
+    color: black;
+}
+
+.primary-link{
+   font-family: "Poppins", sans-serif;
+   text-decoration: none;
+   border: 1px solid #fff;
+   background: #fff;
+   padding: 15px 30px;
+   font-size: 14px;
+   font-weight: 600;
+   border-radius: 6px;
+   line-height: 5.5;
+   letter-spacing: 3px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+div{
+    display: block;
+}
+
+header{
+    background-image: linear-gradient(rgba(10, 48, 27, 0.8), rgba(0,0,0,0.8)),
+    url("../media/Soweto\ Towers\ -\ Joburg\,\ Afrika.jpg");
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 110px;
+    border: 5px solid var(--border-color);
+    color: white;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 64px;
+        margin-top: 80px;
+    }
+
+    .img-responsive1{
+        display: block;
+        width: 100%; 
+    }
+
+    .img-responsive2{
+        display: block;
+        width: 100%;
+        height: 300px;
+        margin-top: 30px;
+        
+        
+    }
+    .img-responsive{
+        display: block;
+        width: 200%;
+        height: 200px;
+    }
+      
+    .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .about{
+        border: 1px solid var(--secondary-color);
+
+    }
+    section h2{
+        opacity: 0.6;
+        color: var(--primary-color);
+        letter-spacing: 5px;
+        font-size: 20px; 
+    }
+
+    section h3{
+        font-size: 35px;
+    }
+
+    section p{
+       color: var(--secondary-color);
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+        .card {
+            background: rgb(63, 138, 103);
+            margin: 30px 0;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+        }
+    
+        .card-header.grid {
+            grid-gap: 0;
+        }
+    
+        .card-body {
+            padding: 20px;
+            overflow: hidden;
+        }
+    
+        .card-footer {
+            padding: 0 30px 30px;
+        }
+    
+        .btn {
+            display: block;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 16px;
+            background-color: var(--primary-color);
+            text-decoration: none;
+        }
+    
+        section {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 100px;
+        }
+    
+        section.secondary {
+            background: #eee6e6;
+        }
+
+        .embed{
+            width: 50%;
+            grid-gap: none;
+            aspect-ratio: 1/1;
+            height: 190px;
+        }
+
+        section.gallery{
+            background: #fff;
+            padding: 100px  80px;
+        }
+
+        footer{
+        background-image: linear-gradient(rgba(10, 48, 27, 0.8), rgba(0,0,0,0.8)),
+        url('../media/footer.jpg');
+        color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 3px solid var(--border-color);
+        margin: 0 auto;
+        max-width: 1600px;
+            }
+        
+    footer a{
+        color: #fff;
+        opacity: 0.7;
+        
+    }
+    footer p{
+        opacity: 0.7;
+        line-height: 24px;
+        color:#fff;
+        
+    }
+    footer h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .grid-3-columns{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    footer ul{
+        padding: 0;
+        
+    }
+    footer li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+        footer section {
+            padding: 100px;
+    
+        }
+
+    @media (max-width: 960px){
+        header{
+            padding: 60px 0;
+        }
+        header h1{
+            font-size: 48px;
+        }
+        header h2{
+            font-size: 20px;
+        }
+        header h3{
+            font-size: 12px;
+        }
+        .grid{
+            grid-template-columns: 1fr;
+            grid-gap: 32px;
+            margin-top: 10px;
+        }
+        section{
+            padding: 30px;
+        }
+       .card-header img {
+       display: none;
+        }
+
+       .embed {
+        aspect-ratio: 16 / 9;
+       }
+}
+    
